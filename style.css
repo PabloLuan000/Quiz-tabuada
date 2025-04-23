@@ -1,40 +1,22 @@
-/* Definição de variáveis */
-:root {
-    --cor-fundo: #f0f8ff;
-    --cor-container: #fff;
-    --cor-botao: #007BFF;
-    --cor-botao-hover: #0056b3;
-    --cor-texto: #333;
-    --cor-texto-foco: #000;
-    --padding: 40px;
-    --font-size-base: 16px;
-  }
-  
-  /* Estilos gerais */
-  body {
+body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: var(--cor-fundo);
-    padding: var(--padding);
-    margin: 0;
+    background: #f0f8ff;
+    padding: 40px;
   }
   
-  /* Estilo do container */
   .container {
-    background: var(--cor-container);
+    background: #fff;
     border-radius: 12px;
     padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     display: inline-block;
-    max-width: 600px;
-    width: 100%;
   }
   
-  /* Estilo dos botões */
   button.opcao {
     padding: 10px 20px;
-    font-size: var(--font-size-base);
-    background: var(--cor-botao);
+    font-size: 16px;
+    background: #007BFF;
     color: white;
     border: none;
     border-radius: 6px;
@@ -42,43 +24,19 @@
     margin: 5px;
     width: 100px;
     display: inline-block;
-    transition: background 0.3s ease, transform 0.2s ease;
   }
   
   button.opcao:hover {
-    background: var(--cor-botao-hover);
-    transform: scale(1.05);
+    background: #0056b3;
   }
   
-  button.opcao:focus {
-    outline: none;
-    border: 2px solid var(--cor-botao-hover);
-  }
-  
-  /* Estilo de feedback e textos */
   #feedback {
     font-weight: bold;
     margin-top: 20px;
   }
   
-  #pontuacao, #fase, #cronometro {
+  #pontuacao {
     margin-top: 10px;
     font-weight: bold;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 600px) {
-    body {
-      padding: 20px;
-    }
-  
-    .container {
-      padding: 20px;
-    }
-  
-    button.opcao {
-      width: 80%;
-      font-size: 14px;
-    }
   }
   
